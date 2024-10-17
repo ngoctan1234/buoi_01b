@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x= 4;
+        x+=3;
+        console.log("x= "+x)
+        let y=x;
+        y++;//y không thay đổi
+        // khi xuống dòng thì y sẽ tăng lên 1
+        console.log("y="+y)
+
+        // tại thời điểm delta t: y=8,x=7
+        const z=x++ + y++ // x và y không thay đổi giá trị
+        //xuống dòng thì x mới tăng lên 1, y tăng lên 1
+        console.log("z="+z)
+        let h=8;
+        h++;// h chưa kịp tăng 
+        console.log("h="+ (h))// khi xuống dòng thì h đã tăng lên 1 đơn vị
+        let k=7;
+        k++;// k chưa kịp tăng
+        console.log("k="+k)// k =8
+    </script>
+</body>
+</html>
